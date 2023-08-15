@@ -203,7 +203,17 @@ sudo apt install gufw
 
 `Install all the packages that were listed:`
 
-- For XFCE and GNOME Desktop Env:
+- For XFCE Desktop Env:
+```bash
+sudo apt-get update
+sudo apt install guake flameshot hardinfo grub-customizer bleachbit gufw
+
+mkdir -p ~/.config/autostart/
+echo -e '[Desktop Entry]\nType=Application\nName=Guake\nExec=guake\nComment=Terminal dropdown' > ~/.config/autostart/guake.desktop
+echo -e '[Desktop Entry]\nType=Application\nName=Flameshot\nExec=flameshot\nComment=Screenshot util' > ~/.config/autostart/flameshot.desktop
+```
+
+- For GNOME Desktop Env:
 ```bash
 sudo apt-get update
 sudo apt install guake flameshot hardinfo grub-customizer bleachbit gufw
