@@ -209,8 +209,11 @@ sudo apt-get update
 sudo apt install guake flameshot hardinfo grub-customizer bleachbit gufw
 
 mkdir -p ~/.config/autostart/
-echo -e '[Desktop Entry]\nType=Application\nName=Guake\nExec=guake\nComment=Terminal dropdown' > ~/.config/autostart/guake.desktop
-echo -e '[Desktop Entry]\nType=Application\nName=Flameshot\nExec=flameshot\nComment=Screenshot util' > ~/.config/autostart/flameshot.desktop
+
+echo -e '[Desktop Entry]Encoding=UTF-8\nType=Application\nName=Guake\nExec=guake\nComment=Terminal dropdown\nOnlyShowIn=XFCE;\nRunHook=0\nStartupNotify=false\nTerminal=false\nHidden=false' > ~/.config/autostart/guake.desktop
+echo -e '[Desktop Entry]Encoding=UTF-8\n\nType=Application\nName=Flameshot\nExec=flameshot\nComment=Screenshot util' > ~/.config/autostart/flameshot.desktop
+
+
 ```
 
 - For GNOME Desktop Env:
