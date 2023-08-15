@@ -207,20 +207,15 @@ sudo apt install gufw
 ```bash
 sudo apt-get update
 sudo apt install guake flameshot hardinfo grub-customizer bleachbit gufw
-
 mkdir -p ~/.config/autostart/
-
-echo -e '[Desktop Entry]Encoding=UTF-8\nType=Application\nName=Guake\nExec=guake\nComment=Terminal dropdown\nOnlyShowIn=XFCE;\nRunHook=0\nStartupNotify=false\nTerminal=false\nHidden=false' > ~/.config/autostart/guake.desktop
-echo -e '[Desktop Entry]Encoding=UTF-8\n\nType=Application\nName=Flameshot\nExec=flameshot\nComment=Screenshot util' > ~/.config/autostart/flameshot.desktop
-
-
+echo -e '[Desktop Entry]\nEncoding=UTF-8\nType=Application\nName=Guake\nExec=guake\nComment=Terminal dropdown\nOnlyShowIn=XFCE;\nRunHook=0\nStartupNotify=false\nTerminal=false\nHidden=false' > ~/.config/autostart/guake.desktop
+echo -e '[Desktop Entry]\nEncoding=UTF-8\nType=Application\nName=Flameshot\nExec=flameshot\nComment=Screenshot util' > ~/.config/autostart/flameshot.desktop
 ```
 
 - For GNOME Desktop Env:
 ```bash
 sudo apt-get update
 sudo apt install guake flameshot hardinfo grub-customizer bleachbit gufw
-
 mkdir -p ~/.config/autostart/
 echo -e '[Desktop Entry]\nType=Application\nName=Guake\nExec=guake\nComment=Terminal dropdown\nX-GNOME-Autostart-enabled=true' > ~/.config/autostart/guake.desktop
 echo -e '[Desktop Entry]\nType=Application\nName=Flameshot\nExec=flameshot\nComment=Screenshot util\nX-GNOME-Autostart-enabled=true' > ~/.config/autostart/flameshot.desktop
@@ -230,7 +225,6 @@ echo -e '[Desktop Entry]\nType=Application\nName=Flameshot\nExec=flameshot\nComm
 ```bash
 sudo apt-get update
 sudo apt install guake flameshot hardinfo grub-customizer bleachbit gufw
-
 mkdir -p ~/.config/autostart-scripts/
 echo -e '#!/bin/sh\nexec guake' > ~/.config/autostart-scripts/guake.sh
 echo -e '#!/bin/sh\nexec flameshot' > ~/.config/autostart-scripts/flameshot.sh
