@@ -76,7 +76,7 @@ sudo apt install code
 </details>
 </table>
 
-`Install C, C++, C#, Java, Python, glib, QT-Creator and VS-Code:`
+`Install C, C++, C#, Java, Python, glib, QT-Creator:`
 ```bash
 sudo apt-get update
 sudo apt-get -y install build-essential openssl libssl-dev libssl1.0 libgl1-mesa-dev libqt5x11extras5
@@ -87,10 +87,7 @@ sudo apt-get -y install qtcreator
 sudo apt -y install mono-devel
 sudo apt-get -y install default-jdk
 sudo apt -y install -y python3 python3-pip
-sudo apt -y install software-properties-common apt-transport-https wget
-wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo gpg --dearmor -o /usr/share/keyrings/ms-archive-keyring.gpg
-echo "deb [arch=amd64 signed-by=/usr/share/keyrings/ms-archive-keyring.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/ms-vscode.list > /dev/null
-sudo apt install code
+
 ```
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
