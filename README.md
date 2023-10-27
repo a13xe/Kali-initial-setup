@@ -64,14 +64,6 @@ sudo apt-get -y install build-essential openssl libssl-dev libssl1.0 libgl1-mesa
 sudo apt install qtbase5-dev qt5-qmake qtbase5-dev-tools
 sudo apt-get install qtcreator
 ```
-- Install Visual Studio Code
-```bash
-sudo apt install software-properties-common apt-transport-https wget
-wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo gpg --dearmor -o /usr/share/keyrings/ms-archive-keyring.gpg
-echo "deb [arch=amd64 signed-by=/usr/share/keyrings/ms-archive-keyring.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/ms-vscode.list > /dev/null
-sudo apt update
-sudo apt install code
-```
 
 </details>
 </table>
@@ -87,7 +79,6 @@ sudo apt-get -y install qtcreator
 sudo apt -y install mono-devel
 sudo apt-get -y install default-jdk
 sudo apt -y install -y python3 python3-pip
-
 ```
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
