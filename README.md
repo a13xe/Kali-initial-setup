@@ -80,17 +80,16 @@ sudo apt install code
 ```bash
 sudo apt-get update
 sudo apt-get -y install build-essential openssl libssl-dev libssl1.0 libgl1-mesa-dev libqt5x11extras5
-sudo apt-get install libglib2.0-dev
-sudo apt-get install libgtk2.0-dev
-sudo apt install qtbase5-dev qt5-qmake qtbase5-dev-tools
-sudo apt-get install qtcreator
-sudo apt install mono-devel
-sudo apt-get install default-jdk
-sudo apt install -y python3 python3-pip
-sudo apt install software-properties-common apt-transport-https wget
+sudo apt-get -y install libglib2.0-dev
+sudo apt-get -y install libgtk2.0-dev
+sudo apt -y install qtbase5-dev qt5-qmake qtbase5-dev-tools
+sudo apt-get -y install qtcreator
+sudo apt -y install mono-devel
+sudo apt-get -y install default-jdk
+sudo apt -y install -y python3 python3-pip
+sudo apt -y install software-properties-common apt-transport-https wget
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo gpg --dearmor -o /usr/share/keyrings/ms-archive-keyring.gpg
 echo "deb [arch=amd64 signed-by=/usr/share/keyrings/ms-archive-keyring.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/ms-vscode.list > /dev/null
-sudo apt update
 sudo apt install code
 ```
 
@@ -193,7 +192,7 @@ sudo apt install burpsuite
 
 ```bash
 sudo apt-get update
-sudo apt install nmap wireshark metasploit-framework aircrack-ng nikto hashcat hydra sqlmap gobuster sublist3r dirb burpsuite
+sudo apt -y install nmap wireshark metasploit-framework aircrack-ng nikto hashcat hydra sqlmap gobuster sublist3r dirb burpsuite
 ```
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -231,12 +230,12 @@ sudo apt install nmap wireshark metasploit-framework aircrack-ng nikto hashcat h
 # Install dependencies
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install bluetooth bluez bluez-tools rfkill
+sudo apt-get -y install bluetooth bluez bluez-tools rfkill
 sudo systemctl enable bluetooth
 sudo systemctl start bluetooth
 sudo rfkill unblock bluetooth
 sudo service bluetooth start
-sudo apt-get install blueman
+sudo apt-get -y install blueman
 # Create autostart directory if it doesn't exist
 mkdir -p ~/.config/autostart
 # Make sure autostart directory has appropriate permissions
@@ -359,7 +358,7 @@ sudo apt install gufw
 - Install all packages:
 ```bash
 sudo apt-get update
-sudo apt install guake flameshot hardinfo bleachbit gufw
+sudo apt -y install guake flameshot hardinfo bleachbit gufw
 ```
 
 - Include in the autorun for XFCE (and propably GNOME) Desktop Env:
