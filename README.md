@@ -213,7 +213,8 @@ sudo apt -y install nmap wireshark metasploit-framework aircrack-ng nikto hashca
 
 <br>
 
-- Install Bluetooth services:
+- Install Bluetooth services and add em to autostart for XFCE (and propably GNOME) Desktop Env:
+
 ```bash
 # Install dependencies
 sudo apt-get update
@@ -240,6 +241,9 @@ Comment=Enable Bluetooth at startup' | tee ~/.config/autostart/bluetooth.desktop
 ```
 
 - Install Pavucontrol (audio device manager) and add it to autostart for XFCE (and propably GNOME) Desktop Env:
+
+_**This one is very optional! In case you're using multiple audio devices!**_
+
 ```bash
 sudo apt-get install pasystray
 mkdir -p ~/.config/autostart
@@ -261,7 +265,6 @@ Comment=PulseAudio System Tray
 Terminal=false
 Type=Application" > ~/.config/autostart/pasystray.desktop
 ```
-
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 </details>
@@ -375,9 +378,3 @@ Comment=Screenshot util' > ~/.config/autostart/flameshot.desktop
 ```
 
 </details>
-
-
-
-
-
-
