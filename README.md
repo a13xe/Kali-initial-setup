@@ -363,7 +363,7 @@ echo -e '[Desktop Entry]
 Type=Application
 Name=Guake
 Comment=terminal emulator
-Exec=guake
+Exec=sleep 5 && guake
 RunHook=0
 StartupNotify=false
 Terminal=false
